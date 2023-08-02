@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- page title  -->
+    <title>Abul Khair Group</title>
+
+</head>
+
+<body class="whide">
+    <img class="demo-bg" src="./title-image.jpg" alt="">
+
+    <div class="title-section p-5">
+        <h1 class="font  lh-1">Online Sales and Distribution System (OSDS)</h1>
+
+    </div>
+
+    <div class="login">
+
+        <tbody>
+            <tr>
+                <td colspan="4" style="width: 420px;" align="center" class="PageHeader" valign="middle">
+                    Login information
+                </td>
+            </tr>
+            <tr>
+                <td align="left" valign="top" rowspan="5" style="width: 100px; background-color: #dbdcde">
+                    <img src="Assets/Images/loginSide.png" id="MainContent_Img1" alt="Login image">
+                </td>
+                <td align="right" colspan="3" style="width: 320px;" height="30">
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 95px; height: 20px;">
+                    <span id="MainContent_lblLoginID" class="LoginLabel">Login ID:</span>
+                </td>
+                <td align="left" style="width: 200px;" height="20px">
+                    <span id="ctl00_MainContent_txtLoginID_wrapper" class="riSingle RadInput RadInput_MetroTouch"
+                        style="width:200px;"><input id="ctl00_MainContent_txtLoginID"
+                            name="ctl00$MainContent$txtLoginID" size="20" maxlength="60"
+                            class="riTextBox riEmpty LoginText" value="Login ID..." type="text"><input
+                            id="ctl00_MainContent_txtLoginID_ClientState"
+                            name="ctl00_MainContent_txtLoginID_ClientState" type="hidden" autocomplete="off"
+                            value="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;Login ID...&quot;,&quot;validationText&quot;:&quot;&quot;,&quot;valueAsString&quot;:&quot;&quot;,&quot;lastSetTextBoxValue&quot;:&quot;Login ID...&quot;}"></span>
+                    <span id="spUserID" class="HideBubble"></span>
+                </td>
+                <td align="left" style="width: 25px; height: 20px;">
+                    <span id="MainContent_RequiredFieldValidator2" title="Enter LoginID." class="ErrorLabel"
+                        autocomplete="off" style="display:none;">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 95px;" height="20px;">
+                    <span id="MainContent_lblPassword" class="LoginLabel">Password:</span>
+                </td>
+                <td align="left" style="width: 200px; height: 20px;">
+                    <div id="PasswordMask" style="width: 200px;">
+                        <span id="ctl00_MainContent_txtPasswordMask_wrapper"
+                            class="riSingle RadInput RadInput_MetroTouch" style="width:200px;"><input
+                                id="ctl00_MainContent_txtPasswordMask" name="ctl00$MainContent$txtPasswordMask"
+                                size="20" class="riTextBox riEmpty" autocomplete="off" value="Password..."
+                                type="text"><input id="ctl00_MainContent_txtPasswordMask_ClientState"
+                                name="ctl00_MainContent_txtPasswordMask_ClientState" type="hidden" autocomplete="off"
+                                value="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;Password...&quot;,&quot;validationText&quot;:&quot;&quot;,&quot;valueAsString&quot;:&quot;&quot;,&quot;lastSetTextBoxValue&quot;:&quot;Password...&quot;}"></span>
+                        <span id="spPass"></span>
+                    </div>
+                    <div id="Password" style="display: none; width: 200px;">
+                        <span id="ctl00_MainContent_txtPassword_wrapper" class="riSingle RadInput RadInput_MetroTouch"
+                            style="width:200px;"><input id="ctl00_MainContent_txtPassword"
+                                name="ctl00$MainContent$txtPassword" size="20" maxlength="30"
+                                class="riTextBox riEnabled LoginText" type="password"><input
+                                id="ctl00_MainContent_txtPassword_ClientState"
+                                name="ctl00_MainContent_txtPassword_ClientState" type="hidden" autocomplete="off"
+                                value="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;&quot;,&quot;valueAsString&quot;:&quot;&quot;,&quot;lastSetTextBoxValue&quot;:&quot;&quot;}"></span>
+                    </div>
+                </td>
+                <td align="left" style="width: 20px;">
+                    <span id="MainContent_RequiredFieldValidator3" title="Enter Password." class="ErrorLabel"
+                        style="display:none;">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="3" style="width: 320px;">
+                    <span id="MainContent_lblErrMsg" class="ErrorLabel"
+                        style="display:inline-block;font-weight:bold;width:300px;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" style="width: 95px;" height="25px">
+                </td>
+                <td align="left" style="width: 200px;" height="25px">
+                    <input type="image" name="ctl00$MainContent$btnOK" id="MainContent_btnOK" text="Login"
+                        onmouseover="this.src='Assets/Images/loginHover.jpg'"
+                        onmouseout="this.src='Assets/Images/login.png'" src="Assets/Images/login.png"
+                        onclick="ValidateInput();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btnOK&quot;, &quot;&quot;, true, &quot;LoginValidationGroup&quot;, &quot;&quot;, false, false))"
+                        style="width:110px;">
+                </td>
+                <td align="left" style="width: 25px;" height="25px">
+                </td>
+            </tr>
+        </tbody>
+    </div>
+
+    </div>
+
+
+
+
+    <!-- java script -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
